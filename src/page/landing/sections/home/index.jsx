@@ -1,5 +1,6 @@
 import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa6";
 import { FiMail } from "react-icons/fi";
+
 const Home = () => {
     return (
         <div className=" flex flex-col items-center gap-1">
