@@ -1,8 +1,8 @@
 
 const Header = () => {
     return (
-        <header className=" fixed top-0 left-0 w-full z-50 bg-[#21232c] ">
-            <nav className="h-20 flex justify-between items-center mx-6">
+        <header className=" fixed top-0 left-0 w-full z-50 bg-[#21232c] flex items-center justify-center ">
+            <nav className="container w-full h-20 flex justify-between items-center mx-6">
                 <a href="/" className=" text-[#f1f2f3] font-medium font-poppins">Bığzsız <span className=" text-[#ff764d]">Kuryer</span></a>
                 <ul className=" flex items-center gap-7 text-[#f1f2f3] font-medium">
                     <li>
