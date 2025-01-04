@@ -5,6 +5,7 @@ import Home from "./sections/home"
 import Services from "./sections/servicess"
 import Skills from "./sections/skills"
 
+
 const LandingPage = () => {
     return (
         <div className=" overflow-hidden mt-20 ">

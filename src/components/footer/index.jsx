@@ -3,13 +3,13 @@ const Footer = () => {
   return (
     <footer className=" py-16 bg-[#21232c] w-full">
 
-      <div className=" container w-full flex items-center justify-between">
+      <div className=" container w-full flex flex-col md:flex-row gap-6 items-center justify-between ">
         <div>
-          <a href="https://biglikuryer.az/"><h1 className="text-[#f1f2f3] text-3xl font-semibold mb-1">
+          <a href="https://biglikuryer.az/"><h1 className="text-[#f1f2f3] text-2xl md:text-3xl font-semibold mb-1">
             Bığlı <span className="text-[#ff764d]">Kuryer</span>
           </h1>
           </a>
-          <h2 className="text-[#f1f2f3] text-base font-semibold">
+          <h2 className="text-[#f1f2f3] text-[15px] md:text-base font-semibold">
             Sürətli Kuryer xidməti
           </h2>
         </div>
@@ -47,7 +47,7 @@ const Footer = () => {
             className="bg-[#8b3f27] text-[#f1f2f3] p-2"><RiMailLine className="h-6 w-6" /></a>
         </div>
         <div>
-          <ul className=" flex flex-col gap-[10px] text-white font-medium [&>li]:cursor-pointer">
+          <ul className=" flex flex-col items-center  md:items-start gap-[10px] text-white font-medium [&>li]:cursor-pointer">
             <li>Bığlı Kuryer çatdırılma</li>
             <li>Bığlı Kuryer - kuryer</li>
             <li>Çatdırılma xidməti</li>

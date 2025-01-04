@@ -2,10 +2,10 @@ import { RiInstagramFill, RiMailFill, RiPhoneFill, RiWhatsappFill } from "react-
 const ContactUS = () => {
     return (
         <div className="container w-full flex  flex-col items-center">
-            <h3 className='text-[#f1f2f3] text-base font-semibold mb-1 flex items-center gap-1'> Bizimlə <span className="text-[#ff764d]">əlaqəyə keçmək</span> üçün növü seçin.</h3>
-            <h2 className='text-[#f1f2f3] text-4xl font-semibold mb-6'>Əlaqə</h2>
+            <h3 className='text-[#f1f2f3] text-[13px] sm:text-base font-semibold mb-1 flex items-center gap-1'> Bizimlə <span className="text-[#ff764d]">əlaqəyə keçmək</span> üçün növü seçin.</h3>
+            <h2 className='text-[#f1f2f3] text-2xl sm:text-4xl font-semibold mb-6'>Əlaqə</h2>
             <div className=" flex items-center justify-center">
-                <div className=" grid grid-cols-2 gap-x-3 gap-y-5">
+                <div className=" grid grid-cols-1 sm:grid-cols-2 gap-x-3 gap-y-5">
                     <div className=" pt-7 px-6 pb-6 bg-[#2b2e3b] border-[2px] border-[#ff764d] rounded-[8px] transition duration-300 ease-in-out">
                         <div className=" flex items-start gap-3 mb-5">
                             <div className="bg-[#f1f2f3] p-[6px] rounded-[6px]">

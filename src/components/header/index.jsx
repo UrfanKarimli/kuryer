@@ -17,8 +17,8 @@ const Header = () => {
     }, []);
 
     return (
-        <header className=" fixed top-0 left-0 w-full flex items-center justify-center z-50 ">
-            <div className={` w-full  flex items-center justify-center transition-all duration-300 ${isScrolled ? "bg-transparent backdrop-blur-md" : "bg-[#21232c]"
+        <header className="  ">
+            <div className={`fixed top-0 left-0  z-50 w-full  flex items-center justify-center transition-all duration-300 ${isScrolled ? "bg-transparent backdrop-blur-md" : "bg-[#21232c]"
                 }`}>
                 <nav className="container w-full h-20 flex justify-between items-center ">
                     <a href="/" className="text-[#f1f2f3] font-medium font-poppins">
@@ -68,7 +68,8 @@ const Header = () => {
                     </ul>
                 </nav>
             </div>
-            <span className="block lg:hidden z-50 mr-6"><HamburgMenu /></span>
+            <HamburgMenu  />
+            
         </header>
     );
 };
