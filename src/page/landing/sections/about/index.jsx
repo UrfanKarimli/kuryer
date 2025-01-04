@@ -27,7 +27,7 @@ const About = () => {
                     sizin ünvanınıza çatacaqdır!
                     <span> Unutmayın ki, <strong>&quot;Bığlı Kuryer&quot;</strong> sizin üçün çalışır!</span>
                 </p>
-                <a href="#contact" className='text-[#f1f2f3] bg-[#ff764d] py-4 px-7 rounded-[8px] font-medium transition-all duration-300 hover:shadow-[0_8px_20px_rgba(204,48,0,0.25)]'>Əlaqəyə keç</a>
+                <a href="/#contact" className='text-[#f1f2f3] bg-[#ff764d] py-4 px-7 rounded-[8px] font-medium transition-all duration-300 hover:shadow-[0_8px_20px_rgba(204,48,0,0.25)]'>Əlaqəyə keç</a>
             </div>
         </div>
     )
