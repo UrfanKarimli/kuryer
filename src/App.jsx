@@ -9,7 +9,7 @@ function App() {
       <main>
         <LandingPage />
       </main>
-      <footer><Footer /></footer>
+      <Footer />
     </>
   )
 }

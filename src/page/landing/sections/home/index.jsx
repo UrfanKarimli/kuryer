@@ -1,5 +1,5 @@
-import { FaInstagram, FaWhatsapp, FaTiktok } from "react-icons/fa6";
-import { FiMail } from "react-icons/fi";
+
+import { RiMailLine, RiInstagramLine , RiWhatsappLine, RiTiktokFill } from "react-icons/ri";
 
 const Home = () => {
     return (
@@ -24,7 +24,7 @@ const Home = () => {
                     }}
                     className="bg-[#8b3f27] text-[#f1f2f3] p-2"
                 >
-                    <FaWhatsapp className="h-6 w-6" />
+                    <RiWhatsappLine className="h-6 w-6" />
                 </a>
                 <a
                     href="https://www.instagram.com/biglikuryer/"
@@ -32,21 +32,21 @@ const Home = () => {
                     style={{
                         clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
                     }}
-                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><FaInstagram className="h-6 w-6" /></a>
+                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><RiInstagramLine className="h-6 w-6" /></a>
                 <a
                     href="https://www.tiktok.com/"
                     target="_blank"
                     style={{
                         clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
                     }}
-                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><FaTiktok className="h-6 w-6" /></a>
+                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><RiTiktokFill className="h-6 w-6" /></a>
                 <a
                     href="mailto:elaqe@biglikuryer.az"
                     target="_blank"
                     style={{
                         clipPath: "polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%)",
                     }}
-                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><FiMail className="h-6 w-6" /></a>
+                    className="bg-[#8b3f27] text-[#f1f2f3] p-2"><RiMailLine className="h-6 w-6" /></a>
             </div>
         </div>
     )

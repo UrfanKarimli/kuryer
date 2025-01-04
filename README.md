@@ -1,6 +1,6 @@
 # React + Vite ilə Dashboard Proyekti
 
-Bu layihə müştərilərə ilkin görtəriş üçün nümunə məqsədini daşıyır. Burada Vite, Tailwind CSS kimi müasir texnologiyalar istifadə olunub.
+Bu layihə yumor məqsədi daşıyır. Burada Vite, Tailwind CSS kimi müasir texnologiyalar istifadə olunub.
 
 ---
 
