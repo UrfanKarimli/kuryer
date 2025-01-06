@@ -15,7 +15,6 @@ const LandingPage = () => {
     const servicesRef = useRef(null);
     const contactRef = useRef(null);
     const [searchParams, setSearchParams] = useSearchParams();
-console.log(searchParams)
 
     useEffect(() => {
         const refs = [
@@ -51,6 +50,7 @@ console.log(searchParams)
 
     return (
         <div className="overflow-hidden mt-20">
+            <span className=" hidden invisible opacity-0">{searchParams}</span>
             <section
                 id="home"
                 ref={homeRef}
