@@ -18,7 +18,7 @@ const HamburgMenu = () => {
     };
 
     const getLinkClass = (sectionId) =>
-        `hover:text-[#ff764d] transition-colors ease-in-out duration-300 ${
+        `hover:text-[#ff764d] transition-colors ease-in-out duration-300 truncate ${
             currentSection === sectionId ? "text-[#ff764d]" : "text-[#f1f2f3]"
         }`;
 
@@ -34,7 +34,7 @@ const HamburgMenu = () => {
             }}
                 className={`fixed top-0 ${
                     isMenuOpen ? "right-0" : "-right-full"
-                } h-full w-1/2 bg-transparent  pt-[72px] pl-12 transition-all duration-300`}
+                } h-full w-3/5 sm:w-1/2 bg-transparent  pt-[72px] pl-3 sm:pl-6 md:pl-12 transition-all duration-300 `}
             >
                 <ul className="flex flex-col items-start gap-12 text-[#f1f2f3] font-medium">
                 {["home", "famous", "about", "services", "contact"].map(

@@ -47,7 +47,7 @@ const Footer = () => {
             className="bg-[#8b3f27] text-[#f1f2f3] p-2"><RiMailLine className="h-6 w-6" /></a>
         </div>
         <div>
-          <ul className=" flex flex-col items-center  md:items-start gap-[10px] text-white font-medium [&>li]:cursor-pointer">
+          <ul className=" flex flex-col items-center mb-14 md:mb-0  md:items-start gap-[10px] text-white font-medium [&>li]:cursor-pointer">
             <li>Bığlı Kuryer çatdırılma</li>
             <li>Bığlı Kuryer - kuryer</li>
             <li>Çatdırılma xidməti</li>

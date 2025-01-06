@@ -1,9 +1,9 @@
-import { useEffect, useState, useRef } from 'react';
+import { useEffect, useState } from 'react';
 import { RiPhoneFill, RiWhatsappLine } from "react-icons/ri";
 
 const BottomNav = () => {
     const [isHidden, setIsHidden] = useState(false);
-    const lastScrollY = useRef(0);
+    let lastScrollY = 0;
 
     useEffect(() => {
         const handleScroll = () => {
@@ -13,7 +13,7 @@ const BottomNav = () => {
             } else {
                 setIsHidden(false);
             }
-            lastScrollY.current = currentScrollY;
+            lastScrollY = currentScrollY;
         };
         window.addEventListener('scroll', handleScroll);
         return () => {
