@@ -17,10 +17,6 @@ module.exports = {
       'md': '768px',
       'lg': '1024px',
       'xl': '1220px',
-      // 'max-sm': { 'max': '640px' },
-      // 'max-md': { 'max': '767px' },
-      // 'max-lg': { 'max': '1024px' },
-      // 'max-xl': { 'max': '1120px' },
     },
     container: {
       center: true,
@@ -73,5 +69,4 @@ module.exports = {
       },
     },
   },
-
 }

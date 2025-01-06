@@ -13,7 +13,7 @@ const Skills = () => {
                 <a href="#contact" className='text-[#f1f2f3] bg-[#ff764d] h-[55px] w-[218px] flex  items-center justify-center gap-1 rounded-[8px] font-medium transition-all duration-300 hover:shadow-[0_8px_20px_rgba(204,48,0,0.25)] '>Məşhurların seçimi <RiBardFill /></a>
             </div>
             <div>
-                <p className=' md:w-[370px] px-8 md:px-0 text-[#9FA1AD]'>
+                <p className=' text-center md:text-start md:w-[370px] px-8 md:px-0 text-[#9FA1AD]'>
                 Bizim ən böyük bacarıqlarımızdan biri də,
                 məhsulları ünvana daha sürətli çatdırmağımızdır.
                 </p>

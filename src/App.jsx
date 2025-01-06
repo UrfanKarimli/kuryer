@@ -1,17 +1,6 @@
-import Footer from "./components/footer"
-import Header from "./components/header"
-import LandingPage from "./page/landing"
-function App() {
+import { RouterProvider } from "react-router-dom";
+import { router } from "./routes";
 
-  return (
-    <>
-        <Header />
-      <main>
-        <LandingPage />
-      </main>
-      <Footer />
-    </>
-  )
+export default function App() {
+  return <RouterProvider router={router} />;
 }
-
-export default App

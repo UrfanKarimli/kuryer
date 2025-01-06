@@ -1,10 +1,26 @@
 import { useState } from "react";
+import { useSearchParams } from "react-router-dom";
 import { RiCloseLine, RiMenuLine } from "react-icons/ri";
 
 const HamburgMenu = () => {
     const [isMenuOpen, setIsMenuOpen] = useState(false);
+    const [searchParams, setSearchParams] = useSearchParams();
+    const currentSection = searchParams.get("section");
     const toggleMenu = () => setIsMenuOpen(!isMenuOpen);
     const closeMenu = () => setIsMenuOpen(false);
+
+    const handleLinkClick = (sectionId) => {
+        const section = document.getElementById(sectionId);
+        if (section) {
+            section.scrollIntoView({ behavior: "smooth", block: "start" });
+            setSearchParams({ section: sectionId });
+        }
+    };
+
+    const getLinkClass = (sectionId) =>
+        `hover:text-[#ff764d] transition-colors ease-in-out duration-300 ${
+            currentSection === sectionId ? "text-[#ff764d]" : "text-[#f1f2f3]"
+        }`;
 
     return (
         <div className="block lg:hidden z-[60] mr-6 fixed top-[18px] right-6">
@@ -21,51 +37,22 @@ const HamburgMenu = () => {
                 } h-full w-1/2 bg-transparent  pt-[72px] pl-12 transition-all duration-300`}
             >
                 <ul className="flex flex-col items-start gap-12 text-[#f1f2f3] font-medium">
-                    <li>
-                        <a
-                            href="/#home"
-                            onClick={closeMenu}
-                            className="hover:text-[#ff764d] transition-colors ease-in-out duration-300"
-                        >
-                            Ana səhifə
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/#famous"
-                            onClick={closeMenu}
-                            className="hover:text-[#ff764d] transition-colors ease-in-out duration-300"
-                        >
-                            Məşhurların seçimi
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/#about"
-                            onClick={closeMenu}
-                            className="hover:text-[#ff764d] transition-colors ease-in-out duration-300"
-                        >
-                            Haqqımızda
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/#services"
-                            onClick={closeMenu}
-                            className="hover:text-[#ff764d] transition-colors ease-in-out duration-300"
-                        >
-                            Xidmətlərimiz
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="/#contact"
-                            onClick={closeMenu}
-                            className="hover:text-[#ff764d] transition-colors ease-in-out duration-300"
-                        >
-                            Əlaqə
-                        </a>
-                    </li>
+                {["home", "famous", "about", "services", "contact"].map(
+                            (sectionId) => (
+                                <li key={sectionId}>
+                                    <button
+                                        onClick={() => handleLinkClick(sectionId)}
+                                        className={getLinkClass(sectionId)}
+                                    >
+                                        {sectionId === "home" && "Ana səhifə"}
+                                        {sectionId === "famous" && "Məşhurların seçimi"}
+                                        {sectionId === "about" && "Haqqımızda"}
+                                        {sectionId === "services" && "Xidmətlərimiz"}
+                                        {sectionId === "contact" && "Əlaqə"}
+                                    </button>
+                                </li>
+                            )
+                        )}
                 </ul>
                 <button
                     onClick={closeMenu}

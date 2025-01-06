@@ -8,7 +8,7 @@ const Famous = () => {
     return (
         <div className='container w-full flex flex-col items-center '>
             <h3 className='text-[#f1f2f3] text-base font-semibold mb-1 flex items-center'>Bığ<span className='text-[#ff764d] flex gap-1 items-center'>lılarımız <RiBardFill /></span></h3>
-            <h2 className='text-[#f1f2f3] text-4xl font-semibold mb-6'> Bığlı Kuryerlərimizi seçən məhşurlar</h2>
+            <h2 className='text-[#f1f2f3] text-4xl font-semibold mb-6 text-center'> Bığlı Kuryerlərimizi seçən məhşurlar</h2>
             <div className=" grid grid-cols-1 gap-6 pt-10 pb-16  md:grid-cols-2 xl:grid-cols-3">
                     <article>
                         <figure className=" relative overflow-hidden rounded-[16px] group ">

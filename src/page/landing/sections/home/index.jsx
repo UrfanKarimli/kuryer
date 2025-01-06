@@ -4,10 +4,10 @@ import { RiMailLine, RiInstagramLine , RiWhatsappLine, RiTiktokFill } from "reac
 const Home = () => {
     return (
         <div className="container w-full flex flex-col items-center gap-1">
-            <h3 className=" leading-8 text-[32px] text-[#f1f2f3] font-medium font-poppins">Salam, <span className=" text-[#ff764d]">Biz</span></h3>
-            <h1 className=" leading-normal text-[64px] text-[#ff764d] font-semibold font-poppins">Bığlı Kuryer</h1>
-            <h3 className=" text-[32px] text-[#f1f2f3] font-medium font-poppins">Çatdırılmalar edirik!</h3>
-            <p className=" text-[#9fa1ad] w-[550px] text-center">
+            <h3 className=" leading-8 text-2xl sm:text-[32px] text-[#f1f2f3] font-medium font-poppins">Salam, <span className=" text-[#ff764d]">Biz</span></h3>
+            <h1 className=" leading-normal text-[42px]  sm:text-[64px] text-[#ff764d] font-semibold font-poppins">Bığlı Kuryer</h1>
+            <h3 className=" text-2xl sm:text-[32px] text-[#f1f2f3] font-medium font-poppins">Çatdırılmalar edirik!</h3>
+            <p className=" text-[#9fa1ad] w-full md:w-[550px] text-center">
                 İllərdir qazandığımız &quot;Bığlı Kuryer&quot; təcrübəsi əsasında,
                 sizlərə öz xidmətlərimizi göstəririk.
             </p>
@@ -51,5 +51,4 @@ const Home = () => {
         </div>
     )
 }
-
 export default Home
